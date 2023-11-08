@@ -1,6 +1,6 @@
 /* Styles.css file */
 
-/*  copyright 2022 ONly Lusos Cartel */
+/*  copyright 2023 Only Lusos Cartel */
 
 
 
@@ -228,6 +228,7 @@ body.active { overflow-y: hidden; }
   font-family: var(--ff-poppins);
   font-size: var(--fs-6);
   font-weight: var(--fw-500);
+  text-decoration: none;
 }
 
 .btn-link > * { transition: var(--transition); }
@@ -429,10 +430,7 @@ body.active { overflow-y: hidden; }
 
 
 
-
-/*-----------------------------------*\
-  #STATS
-\*-----------------------------------*/
+/* STATS */
 
 .stats .container {
   display: grid;
@@ -464,10 +462,7 @@ body.active { overflow-y: hidden; }
 
 
 
-
-/*-----------------------------------*\
-  #MARKET
-\*-----------------------------------*/
+/* MARKET */
 
 .market .section-text { margin-block-end: 24px; }
 
@@ -538,11 +533,7 @@ body.active { overflow-y: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
+/* CTA */
 
 .cta .btn-primary {
   display: flex;
@@ -556,10 +547,7 @@ body.active { overflow-y: hidden; }
 
 
 
-
-/*-----------------------------------*\
-  #INSTRUCTION
-\*-----------------------------------*/
+/* ISTRUCTION */
 
 .instruction .section-text { margin-block-end: 50px; }
 
@@ -581,10 +569,7 @@ body.active { overflow-y: hidden; }
 
 
 
-
-/*-----------------------------------*\
-  #APP
-\*-----------------------------------*/
+/* APP */
 
 .app-card {
   padding: 25px;
@@ -619,11 +604,7 @@ body.active { overflow-y: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
+/* FOOTER */
 
 .footer {
   text-align: center;
@@ -698,12 +679,135 @@ body.active { overflow-y: hidden; }
 
 
 
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for Register.html page  */
+
+
+.registerPage .form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background: #eee;
+}
+
+.registerPage .form-container form{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    text-align: center;
+    width: 500px;
+}
+
+.registerPage .form-container form h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.registerPage .form-container form input,
+.registerPage .form-container form textarea
+{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #eee;
+    color: #111;
+    border-radius: 5px;
+}
+
+/* 
+.registerPage .form-container form select option{
+    background: #fff;
+} */
+/* 
+.registerPage .form-container form .form-btn{
+    background: #fbd0d9;
+    color: var(--bistre);
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.registerPage .form-container form .form-btn:hover{
+    background: var(--bistre);
+    color: #fff;
+} */
+
+.registerPage .form-container form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #111;
+}
+
+.registerPage .form-container form p a{
+    color: var(--bistre);
+}
+
+.registerPage .form-container form p a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERRIES */
 
 /**
- * responsive for large than 575px screen
+ * responsiveness for large than 575px screen
  */
 
 @media (min-width: 575px) {
@@ -736,7 +840,7 @@ body.active { overflow-y: hidden; }
 
 
 /**
- * responsive for large than 768px screen
+ * responsivemess for large than 768px screen
  */
 
 @media (min-width: 768px) {
